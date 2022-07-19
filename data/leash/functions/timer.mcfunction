@@ -27,4 +27,4 @@ execute as @a[scores={freezeTimer=1200..}] run tag @s remove leash
 execute as @a[scores={freezeTimer=1200..}] run tag @s remove frozen
 execute as @a[scores={freezeTimer=1200..}] run scoreboard players set @s freezeTimer 0
 
-execute as @a[tag=!spectating] run scoreboard players set @a deathTimer 0
+execute as @a[tag=!spectating] run scoreboard players set @s deathTimer 0

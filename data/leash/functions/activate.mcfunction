@@ -6,7 +6,7 @@ execute as INSERTNAME1 if entity @s[tag=leash, scores={deathCount=0}] at @s run 
 execute as INSERTNAME2 if entity @s[tag=leash, scores={deathCount=0}] at @s run tp @e[type=allay, name="INSERTNAME2"] ~ ~-1 ~ ~ ~
 
 # Teleport leashed allay to Hunter if too far
-execute as @p[team=Hunter] at @s run tp @e[distance=10.., type=allay, tag=leashed] @s
+execute if entity @e[type=allay, tag=leashed] as @p[team=Hunter] at @s run tp @e[distance=10.., type=allay, tag=leashed] @s
 
 # Execute when person dies
 execute as @a[scores={deathCount=1..}, tag=leash] run gamemode spectator @s

@@ -7,6 +7,7 @@ kill @e[type=allay, tag=ghost]
 tag @a remove spectating
 tag @a remove frozen
 tag @a remove leashed
+tag @a remove leash
 tag @a[team=Hiders] add leash
 
 # Player specific conditions
