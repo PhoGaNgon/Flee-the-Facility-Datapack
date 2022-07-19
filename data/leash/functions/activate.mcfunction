@@ -26,16 +26,16 @@ execute as INSERTNAME2 if entity @s[tag=deathExplosion] run tp @s @e[type=allay,
 # Shift allay position up by one
 # Make dead person's allay visible
 # Play death effect
-execute as @a[tag=deathExplosion] at @s run tp @e[type=allay, tag=ghost, sort=nearest, limit=1] ~ ~2.25 ~
-execute as @a[tag=deathExplosion] at @s run tp @s ~ ~2.25 ~
-execute as @a[tag=deathExplosion] at @s run effect clear @e[type=allay, tag=ghost, limit=1, sort=nearest, distance=..1] invisibility
-execute as @a[tag=deathExplosion] at @s run playsound entity.elder_guardian.death master @a
-execute as @a[tag=deathExplosion] at @s run playsound block.bell.resonate master @a
-execute as @a[tag=deathExplosion] at @s run particle sculk_soul ~ ~0.25 ~ 0.3 0.5 0.3 .05 100
-tag @a[tag=deathExplosion] remove deathExplosion
+execute as @p[tag=deathExplosion] at @s run tp @e[type=allay, tag=ghost, distance=..1, sort=nearest, limit=1] ~ ~2.25 ~
+execute as @p[tag=deathExplosion] at @s run tp @s ~ ~2.25 ~
+execute as @p[tag=deathExplosion] at @s run effect clear @e[type=allay, tag=ghost, limit=1, sort=nearest, distance=..1] invisibility
+execute as @p[tag=deathExplosion] at @s run playsound entity.elder_guardian.death master @a
+execute as @p[tag=deathExplosion] at @s run playsound block.bell.resonate master @a
+execute as @p[tag=deathExplosion] at @s run particle sculk_soul ~ ~0.25 ~ 0.3 0.5 0.3 .05 100
+execute as @p[tag=deathExplosion] run tag @s remove deathExplosion
 
 # Make dead player spectate their allay
-execute as @a[tag=spectating] at @s run spectate @e[type=allay, tag=ghost, sort=nearest, limit=1]
+execute as @a[tag=spectating] at @s run spectate @e[type=allay, tag=ghost, distance=..1, sort=nearest, limit=1]
 
 # Leash behavior
 execute as @e[tag=ghost, tag=!leashed, type=allay] if data entity @s Leash run tag @s add leashed
