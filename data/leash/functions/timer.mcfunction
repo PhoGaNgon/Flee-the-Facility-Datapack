@@ -9,7 +9,7 @@ execute if score INSERTNAME1 deathTimer matches 500.. run effect give @e[type=al
 execute if score INSERTNAME2 deathTimer matches 500.. run effect give @e[type=allay, name="INSERTNAME2", tag=ghost] invisibility 999999 1 true
 
 execute as @a[scores={deathTimer=500..}] at @s run summon armor_stand ~ ~15 ~ {Tags:["leashBreaker"]}
-execute as @a[scores={deathTimer=500..}] at @s run data modify entity @e[type=allay, tag=leashed, limit=1] Leash set from entity @e[type=armor_stand, tag=leashBreaker, limit=1]
+execute as @a[tag=leashed, scores={deathTimer=500..}] at @s run data modify entity @e[type=allay, tag=leashed, limit=1] Leash set from entity @e[type=armor_stand, tag=leashBreaker, limit=1]
 execute as @a[scores={deathTimer=500..}] run gamemode adventure @s
 execute as @a[scores={deathTimer=500..}] run tag @s remove spectating
 execute as @a[scores={deathTimer=500..}] run tag @s remove leashed
