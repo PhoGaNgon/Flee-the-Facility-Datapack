@@ -9,10 +9,10 @@ execute as INSERTNAME2 if entity @s[tag=leash, scores={deathCount=0}] at @s run 
 execute as @p[team=Hunter] at @s run tp @e[distance=10.., type=allay, tag=leashed] @s
 
 # Execute when person dies
-execute as @a[scores={deathCount=1..}] run tag @s remove leash
-execute as @a[scores={deathCount=1..}] run gamemode spectator @s
-execute as @a[scores={deathCount=1..}] run tag @s add spectating
-execute as @a[scores={deathCount=1..}] run tag @s add deathExplosion
+execute as @a[scores={deathCount=1..}, tag=leash] run gamemode spectator @s
+execute as @a[scores={deathCount=1..}, tag=leash] run tag @s add spectating
+execute as @a[scores={deathCount=1..}, tag=leash] run tag @s add deathExplosion
+execute as @a[scores={deathCount=1..}, tag=leash] run tag @s remove leash
 execute as @a[scores={deathCount=1..}] run scoreboard players set @s deathCount 0
 
 # Make dead people teleport to their respective allays

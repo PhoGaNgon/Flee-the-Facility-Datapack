@@ -7,6 +7,7 @@ tag @p[distance=..3, tag=spectating] add frozen
 gamemode adventure @p[distance=..3, tag=frozen]
 tag @p[distance=..3, tag=frozen] remove spectating
 tag @p[distance=..3, tag=frozen] add leash
+tag @p[distance=..3, tag=frozen] remove leashed
 effect give @p[distance=..3, tag=frozen] glowing 100 1 true
 execute as @p[distance=..3, tag=frozen] run tellraw @a[team=Hiders] [{"text":"","color":"red","extra":[{"selector":"@s"}]},{"text":" has been captured!"}]
 
