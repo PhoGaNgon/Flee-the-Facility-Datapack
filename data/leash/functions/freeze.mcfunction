@@ -2,7 +2,7 @@ execute unless entity @p[team=Hunter, distance=..6] run scoreboard players add @
 tp @s ~ ~-0.5 ~
 effect give @s slowness 1 255 true
 effect give @s jump_boost 1 128 true
-execute at @s run particle snowflake ~ ~1 ~ .3 .5 .3 0.01 1
+execute at @s unless entity @p[team=Hunter, distance=..6] run particle snowflake ~ ~1 ~ .3 .5 .3 0.01 1
 
 # Frozen display bar
 title @s times 0 10 0
