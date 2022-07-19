@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {NoAI:1, Silent:1, Invulnerable:1, Team:Hiders, Tags:["highlighter"], ActiveEffects:[{Id:14, Duration:999999, ShowParticles:0b}]}
