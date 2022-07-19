@@ -33,6 +33,7 @@ execute as @a[scores={healTime=..-1}] run scoreboard players reset @s healTime
 execute as @a[tag=healed] run effect give @s regeneration 1 255 true
 execute as @a[tag=healed, scores={Health=..19}, nbt={ActiveEffects:[{Id:10, Amplifier: -1b}]}] at @s run playsound entity.item.pickup master @s
 execute as @a[tag=healed, scores={Health=20..}] run effect clear @s regeneration
+execute as @a[tag=healed, scores={Health=20..}] run tag @s remove healed
 
 # Display titles - healing progress bar
 execute as @a[tag=healer] run title @s title ""
