@@ -8,8 +8,8 @@ execute as INSERTNAME2 if entity @s[tag=leash, scores={deathCount=0}] at @s run 
 # Teleport leashed allay to Hunter if too far
 execute if entity @e[type=allay, tag=leashed] as @p[team=Hunter] at @s run tp @e[distance=10.., type=allay, tag=leashed] @s
 
+# Execute deathExplosion function slightly delayed after death
 execute as @p[scores={deathCount=1..}] run schedule function leash:deathexplosion 1t
-#execute as @p[scores={deathCount=1..}] run say hi
 
 # Make dead player spectate their allay and cannot escape
 execute as @a[tag=spectating, gamemode=spectator] at @s run spectate @e[type=allay, tag=ghost, distance=..0.1, limit=1]
