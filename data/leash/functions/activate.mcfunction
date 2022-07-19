@@ -1,4 +1,5 @@
 # Teleport allay to human
+# Player specific conditions
 execute as PhoGaNgon if entity @s[tag=leash, scores={deathCount=0}] at @s run tp @e[type=allay, name="PhoGaNgon"] ~ ~-1 ~ ~ ~
 execute as Baconking26 if entity @s[tag=leash, scores={deathCount=0}] at @s run tp @e[type=allay, name="Baconking26"] ~ ~-1 ~ ~ ~
 execute as JBEmeraldMC if entity @s[tag=leash, scores={deathCount=0}] at @s run tp @e[type=allay, name="JBEmeraldMC"] ~ ~-1 ~ ~ ~
@@ -12,7 +13,12 @@ execute if entity @e[type=allay, tag=leashed] as @p[team=Hunter] at @s run tp @e
 execute as @p[scores={deathCount=1..}] run schedule function leash:deathexplosion 1t
 
 # Make dead player spectate their allay and cannot escape
-execute as @a[tag=spectating, gamemode=spectator] at @s run spectate @e[type=allay, tag=ghost, distance=..0.1, limit=1]
+# Player specific conditions
+execute as @a[name="PhoGaNgon", tag=spectating] at @s run spectate @e[type=allay, tag=ghost, name="PhoGaNgon", limit=1]
+execute as @a[name="Baconking26", tag=spectating] at @s run spectate @e[type=allay, tag=ghost, name="Baconking26", limit=1]
+execute as @a[name="JBEmeraldMC", tag=spectating] at @s run spectate @e[type=allay, tag=ghost, name="JBEmeraldMC", limit=1]
+execute as @a[name="INSERTNAME1", tag=spectating] at @s run spectate @e[type=allay, tag=ghost, name="INSERTNAME1", limit=1]
+execute as @a[name="INSERTNAME2", tag=spectating] at @s run spectate @e[type=allay, tag=ghost, name="INSERTNAME2", limit=1]
 
 # Leash behavior
 execute as @e[tag=ghost, tag=!leashed, type=allay] if data entity @s Leash run tag @s add leashed
