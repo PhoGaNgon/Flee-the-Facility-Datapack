@@ -33,10 +33,3 @@ execute at @s if score @s freezeTimer matches 900 run playsound entity.player.hu
 execute at @s if score @s freezeTimer matches 1000 run playsound entity.player.hurt_freeze master @s
 execute at @s if score @s freezeTimer matches 1100 run playsound entity.player.hurt_freeze master @s
 execute at @s if score @s freezeTimer matches 1199 run playsound entity.player.hurt_freeze master @s
-
-execute if score @s freezeTimer matches 1199.. at @s run title @a times 0 60 20
-execute if score @s freezeTimer matches 1199.. at @s run title @a[distance=.1..] subtitle [{"text":"","color":"red","bold":true,"extra":[{"selector":"@s"}]},{"text":" has been","color":"white"},{"text":" FROZEN...","color":"#42a1f5"}]
-execute if score @s freezeTimer matches 1199.. at @s run title @a[distance=.1..] title ""
-execute if score @s freezeTimer matches 1199.. run tellraw @a [{"text":"","bold":true,"extra":[{"selector":"@s"}],"color":"red"},{"text":" has been","color":"white"},{"text":" FROZEN...","color":"#42a1f5"}]
-execute if score @s freezeTimer matches 1199.. at @a run playsound entity.ghast.death master @a
-execute if score @s freezeTimer matches 1199.. run title @s title {"text":"PERMAFROST","color":"red","bold":true}

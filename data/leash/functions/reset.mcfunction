@@ -9,6 +9,7 @@ tag @a remove frozen
 tag @a remove leashed
 tag @a remove leash
 tag @a[team=Hiders] add leash
+kill @e[type=skeleton, tag=highlighter]
 
 # Player specific conditions
 execute if entity @p[name="PhoGaNgon", tag=leash] run summon minecraft:allay ~ ~ ~ {CustomName:'"PhoGaNgon"', CustomNameVisible:true, Team:Hiders, NoAI:1, Invulnerable:1, Silent:1, PersistenceRequired:1, Tags:["ghost"], ActiveEffects:[{Id:14, Duration:999999, ShowParticles:0b}]}
