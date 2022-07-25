@@ -1,8 +1,6 @@
 {
     "values": [
-        "leash:load",
-        "movement:load",
-        "hacking:load",
-        "useitem:load"
+        "cryochamber:load",
+        "ghost:load"
     ]
 }

@@ -1,8 +1,6 @@
 {
     "values": [
-        "leash:tick",
-        "movement:tick",
-        "hacking:tick",
-        "useitem:tick"
+        "cryochamber:tick",
+        "ghost:tick"
     ]
 }
