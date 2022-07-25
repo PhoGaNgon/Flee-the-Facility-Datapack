@@ -1,6 +1,6 @@
 # Scoreboard setup
-scoreboard objectives remove sid
-scoreboard objectives add sid dummy
+scoreboard objectives remove ghost_sid
+scoreboard objectives add ghost_sid dummy
 scoreboard objectives add deathCount deathCount
 scoreboard objectives add deathTimer dummy
 # Reset tags

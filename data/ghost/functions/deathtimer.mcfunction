@@ -1,7 +1,7 @@
 # Make the dead player spectate their allay
-scoreboard players operation .spectate sid = @s sid
+scoreboard players operation .spectate ghost_sid = @s ghost_sid
 tag @s add spectateLink
-execute as @e[type=allay, tag=ghost] if score @s sid = .spectate sid run spectate @s @p[tag=spectateLink]
+execute as @e[type=allay, tag=ghost] if score @s ghost_sid = .spectate ghost_sid run spectate @s @p[tag=spectateLink]
 tag @s remove spectateLink
 
 # Ticks down the timer until dead player gets back up
