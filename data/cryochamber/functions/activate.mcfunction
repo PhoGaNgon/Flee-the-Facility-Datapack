@@ -10,7 +10,7 @@ execute as @e[type=allay, tag=ghost, tag=leashed] at @s run tp @s ~ ~ ~ facing e
 execute as @e[type=allay, tag=ghost, tag=leashed] at @s run tag @p[team=Hiders, distance=..0.1] add leashed
 
 # Execute when an allay is leashed
-execute if entity @e[type=allay, tag=ghost, tag=leashed] run function cryochamber:lookathunter
+execute if entity @e[type=allay, tag=ghost, tag=leashed] run function cryochamber:leashedplayer
 
 
 
