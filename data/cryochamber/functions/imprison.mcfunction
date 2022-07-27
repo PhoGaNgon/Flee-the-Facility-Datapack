@@ -1,6 +1,5 @@
 # Imprisons the leashed player into the cryochamber
 tag @s remove dead
-tag @s remove leashed
 tag @s add ghostLink
 tag @s add frozen
 scoreboard players set @s deathTimer 0

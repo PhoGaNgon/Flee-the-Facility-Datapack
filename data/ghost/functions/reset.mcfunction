@@ -11,7 +11,6 @@ tag @a remove init
 tag @a remove ghostLink
 tag @a remove dead
 tag @a remove frozen
-tag @a remove leashed
 tag @a remove ghostLink
 tag @a[team=Hiders] add init
 tag @a[team=Hiders] add ghostLink
