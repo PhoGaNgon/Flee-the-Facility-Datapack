@@ -2,6 +2,7 @@
     "values": [
         "ghost:tick",
         "movement:tick",
-        "useitem:tick"
+        "useitem:tick",
+        "hacking:tick"
     ]
 }

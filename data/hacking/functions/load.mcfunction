@@ -1,8 +1,8 @@
 tellraw @a {"text": "Hacking is loaded", "color": "blue"}
 
 scoreboard objectives add stationCounter dummy
-scoreboard objectives add stationsHacked dummy
-scoreboard players set count stationsHacked 0
+scoreboard objectives add StationsHacked dummy
+scoreboard players set count StationsHacked 0
 
 # Command block setup Top to bottom
 #execute positioned ~ ~1 ~ run function hacking:checkevent

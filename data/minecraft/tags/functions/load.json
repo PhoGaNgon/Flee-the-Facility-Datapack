@@ -2,6 +2,7 @@
     "values": [
         "ghost:load",
         "movement:load",
-        "useitem:load"
+        "useitem:load",
+        "hacking:load"
     ]
 }

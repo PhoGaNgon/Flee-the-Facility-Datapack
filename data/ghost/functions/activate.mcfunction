@@ -15,4 +15,4 @@ execute if entity @e[type=item, name="Lead"] run give @p[team=Hunter] lead
 kill @e[type=item, name="Lead"]
 
 # Display particles at spectators
-execute at @a[tag=!dead, gamemode=spectator] run particle minecraft:dust_color_transition 1 0.2 0.2 1 1 1 1 ~ ~1.75 ~ .1 .1 .1 1 2 normal @a[distance=0.1..]
+execute at @a[tag=!dead, gamemode=spectator] run particle minecraft:dust_color_transition 1 0.2 0.2 1 1 1 1 ~ ~1.75 ~ .1 .1 .1 1 2 normal @a[distance=0.1.., team=!Hunter]
