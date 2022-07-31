@@ -1,8 +1,9 @@
-execute unless entity @s[nbt={SelectedItem:{id:"minecraft:apple"}}] run function useitem:appleheal/healcanceled
-execute unless entity @p[distance=0.01..2, scores={Health=..19}] run function useitem:appleheal/healcanceled
-
 scoreboard players add @s healTime 1
 attribute @s generic.movement_speed base set 0
+
+# Healer cancels action
+execute unless entity @s[nbt={SelectedItem:{id:"minecraft:apple"}}] run function useitem:appleheal/healcanceled
+execute unless entity @p[distance=0.01..2, scores={Health=..19}] run function useitem:appleheal/healcanceled
 
 # Display titles - healing progress bar
 title @a[sort=nearest, limit=2] title ""
