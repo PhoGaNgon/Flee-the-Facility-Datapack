@@ -1,6 +1,7 @@
 {
     "values": [
-        "cryochamber:tick",
-        "ghost:tick"
+        "ghost:tick",
+        "movement:tick",
+        "useitem:tick"
     ]
 }

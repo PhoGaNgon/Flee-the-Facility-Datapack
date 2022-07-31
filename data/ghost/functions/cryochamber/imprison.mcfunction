@@ -15,4 +15,4 @@ summon armor_stand ~ ~15 ~ {Tags:["leashBreaker"]}
 effect give @e[type=allay, tag=leashed] invisibility 999999 1 true
 data modify entity @e[type=allay, tag=leashed, limit=1] Leash set from entity @e[type=armor_stand, tag=leashBreaker, limit=1]
 
-execute at @s run schedule function cryochamber:killleashbreaker 1t
+execute at @s run schedule function ghost:cryochamber/killleashbreaker 1t

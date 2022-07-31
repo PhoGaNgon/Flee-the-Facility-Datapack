@@ -1,6 +1,7 @@
 {
     "values": [
-        "cryochamber:load",
-        "ghost:load"
+        "ghost:load",
+        "movement:load",
+        "useitem:load"
     ]
 }

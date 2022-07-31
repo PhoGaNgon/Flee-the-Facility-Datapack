@@ -36,4 +36,4 @@ execute at @s if score @s freezeTimer matches 1100 run playsound entity.player.h
 execute at @s if score @s freezeTimer matches 1199.. run playsound entity.player.hurt_freeze master @s
 
 # Kill frozen player ocne time has run out for them
-execute if score @s freezeTimer matches 1200.. as @s at @s run function cryochamber:killfrozenplayer
+execute if score @s freezeTimer matches 1200.. as @s at @s run function ghost:cryochamber/killfrozenplayer

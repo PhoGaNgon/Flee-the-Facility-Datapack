@@ -1,1 +1,0 @@
-tellraw @a {"text":"Cryochamber has loaded", "color":"#00fbff"}

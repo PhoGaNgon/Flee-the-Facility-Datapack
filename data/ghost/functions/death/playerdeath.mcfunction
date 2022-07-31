@@ -5,7 +5,7 @@ tag @s add deathExplode
 tag @s add dead
 tag @s remove ghostLink
 
-execute as @e[type=allay, tag=ghost] if score @s ghost_sid = .deathExplode ghost_sid at @s run function ghost:deathexplosion
+execute as @e[type=allay, tag=ghost] if score @s ghost_sid = .deathExplode ghost_sid at @s run function ghost:death/deathexplosion
 
 gamemode spectator @s
 scoreboard players set @s deathCount 0
