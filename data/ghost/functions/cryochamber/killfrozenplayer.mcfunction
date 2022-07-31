@@ -2,6 +2,7 @@
 effect clear @s
 tag @s remove ghostLink
 tag @s remove frozen
+tag @s add dead
 # Make their allay visible and move it up to be properly displayed in the cryochamber
 execute positioned ~ ~-1 ~ run effect clear @e[type=allay, tag=ghost, sort=nearest, limit=1, distance=..1] invisibility
 execute positioned ~ ~-1 ~ run tp @e[type=allay, tag=ghost, sort=nearest, limit=1, distance=..1] ~ ~1.5 ~ ~ ~

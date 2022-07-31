@@ -1,4 +1,4 @@
-tag @s remove dead
+tag @s remove ghost
 tag @s remove leashed
 tag @s add ghostLink
 

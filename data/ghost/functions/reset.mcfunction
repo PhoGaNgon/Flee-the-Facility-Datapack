@@ -11,6 +11,7 @@ scoreboard players set @a deathCount 0
 # Reset tags
 tag @a remove init
 tag @a remove ghostLink
+tag @a remove ghost
 tag @a remove dead
 tag @a remove frozen
 tag @a[team=Hiders] add init
