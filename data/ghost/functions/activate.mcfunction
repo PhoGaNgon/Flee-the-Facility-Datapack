@@ -1,3 +1,4 @@
+function ghost:cryochamber/activate
 
 # Assign allays to players
 execute as @p[tag=init] positioned ~ ~1 ~ run function ghost:init

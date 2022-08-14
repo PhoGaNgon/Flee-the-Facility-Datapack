@@ -19,3 +19,5 @@ tag @a[team=Hiders] add ghostLink
 
 # Kill any existing allays
 kill @e[type=allay, tag=ghost]
+
+function ghost:cryochamber/resetcryochambers
