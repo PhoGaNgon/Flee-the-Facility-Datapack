@@ -5,7 +5,7 @@ tag @s remove frozen
 tag @s add dead
 # Make their allay visible and move it up to be properly displayed in the cryochamber
 execute positioned ~ ~-1 ~ run effect clear @e[type=allay, tag=ghost, sort=nearest, limit=1, distance=..1] invisibility
-execute positioned ~ ~-1 ~ run tp @e[type=allay, tag=ghost, sort=nearest, limit=1, distance=..1] ~ ~1.5 ~ ~ ~
+tp @e[type=allay, tag=ghost, sort=nearest, limit=1, distance=..1] ~ ~-0.5 ~ ~ ~
 # Lock the cryochamber so that it cannot be used again until reset
 tag @e[type=skeleton, tag=cryochamber, sort=nearest, distance=..1, limit=1] add locked
 # Put player in spectator and display all titles and messages

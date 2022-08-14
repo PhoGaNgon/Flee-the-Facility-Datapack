@@ -1,0 +1,2 @@
+function ghost:activate
+function ghost:cryochamber/activate

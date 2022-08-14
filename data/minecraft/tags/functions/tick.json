@@ -1,8 +1,8 @@
 {
     "values": [
-        "ghost:tick",
         "movement:tick",
         "useitem:tick",
-        "hacking:tick"
+        "hacking:tick",
+        "start:tick"
     ]
 }

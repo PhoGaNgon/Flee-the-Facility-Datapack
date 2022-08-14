@@ -3,6 +3,7 @@
         "ghost:load",
         "movement:load",
         "useitem:load",
-        "hacking:load"
+        "hacking:load",
+        "start:load"
     ]
 }

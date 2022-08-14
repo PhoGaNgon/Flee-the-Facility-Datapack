@@ -1,0 +1,1 @@
+execute as @a[team=Hunter, scores={DamageDealt=10..}] at @s run function start:attributesetup/weakenhunter

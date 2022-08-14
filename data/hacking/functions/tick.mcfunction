@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:armor_stand, tag=QuickTime] at @s run function hacking:quicktime/quicktimeinit
+execute as @e[type=minecraft:armor_stand, tag=HackSuccessCounter] at @s if entity @p[distance=..4] run function hacking:displayprogress

@@ -1,10 +1,9 @@
-function ghost:cryochamber/activate
 
 # Assign allays to players
 execute as @p[tag=init] positioned ~ ~1 ~ run function ghost:init
 
 # After death behavior
-execute unless entity @a[tag=deathExplode] as @p[scores={deathCount=1..}] run function ghost:death/playerdeath
+execute unless entity @a[tag=deathExplode] as @p[team=Hiders, scores={deathCount=1..}] run function ghost:death/playerdeath
 execute as @a[tag=ghost] run function ghost:death/deathtimer
 
 # Make allay follow its player if they are alive
