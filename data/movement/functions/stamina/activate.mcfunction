@@ -6,6 +6,7 @@ scoreboard players add @a[scores={stamina=..97}] stamina 1
 
 # Stamina reduce by jump commands
 execute as @a[scores={jump=1..}] run scoreboard players remove @s stamina 49
+execute as @a[team=Hunter, scores={jump=1..}] run effect give @s slowness 1 2
 xp add @a[scores={jump=1..}] -147 points
 scoreboard players set @p[scores={jump=1..}] jump 0
 

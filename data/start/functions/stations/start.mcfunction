@@ -10,10 +10,11 @@ summon minecraft:armor_stand 1309 32 1843 {Tags:["StationRandomizer", "Station4_
 summon minecraft:armor_stand 1316 26 1872 {Tags:["StationRandomizer", "Station5_1", "Region5"], Invisible:1, Invulnerable:1, NoGravity:1}
 summon minecraft:armor_stand 1326 26 1923 {Tags:["StationRandomizer", "Station5_2", "Region5"], Invisible:1, Invulnerable:1, NoGravity:1}
 execute as @e[type=minecraft:armor_stand, tag=StationRandomizer] at @s run setblock ~ ~ ~ minecraft:black_concrete
-kill @e[type=minecraft:armor_stand, tag=Region1, sort=random, limit=1]
-kill @e[type=minecraft:armor_stand, tag=Region2, sort=random, limit=1]
-kill @e[type=minecraft:armor_stand, tag=Region3, sort=random, limit=1]
-kill @e[type=minecraft:armor_stand, tag=Region4, sort=random, limit=1]
-kill @e[type=minecraft:armor_stand, tag=Region5, sort=random, limit=1]
-execute as @e[type=minecraft:armor_stand, tag=StationRandomizer] at @s run setblock ~ ~ ~ minecraft:red_glazed_terracotta
+tag @e[type=minecraft:armor_stand, tag=Region1, sort=random, limit=1] add active
+tag @e[type=minecraft:armor_stand, tag=Region2, sort=random, limit=1] add active
+tag @e[type=minecraft:armor_stand, tag=Region3, sort=random, limit=1] add active
+tag @e[type=minecraft:armor_stand, tag=Region4, sort=random, limit=1] add active
+tag @e[type=minecraft:armor_stand, tag=Region5, sort=random, limit=1] add active
+tag @e[type=armor_stand, tag=StationRandomizer, tag=!active] add active
+execute as @e[type=minecraft:armor_stand, tag=StationRandomizer, tag=active] at @s run setblock ~ ~ ~ minecraft:red_glazed_terracotta
 kill @e[type=minecraft:armor_stand, tag=StationRandomizer]

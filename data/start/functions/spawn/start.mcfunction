@@ -22,5 +22,7 @@ execute as @e[type=armor_stand, tag=SpawnSpot, tag=marked] at @s run function st
 schedule function start:spawn/spawnparticles 1t
 
 gamemode adventure @a[team=Hiders]
+give @a[team=Hiders] apple
+
 
 kill @e[type=armor_stand, tag=SpawnSpot]

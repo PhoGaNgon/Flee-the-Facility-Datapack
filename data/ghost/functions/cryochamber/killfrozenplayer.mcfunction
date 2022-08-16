@@ -2,6 +2,7 @@
 tag @s remove ghostLink
 tag @s remove frozen
 tag @s add dead
+tag @s add PlayerCountDown
 
 # Make their allay visible and move it up to be properly displayed in the cryochamber
 scoreboard players operation .frozen ghost_sid = @s ghost_sid
